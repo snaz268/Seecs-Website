@@ -1,0 +1,641 @@
+
+body {
+  margin:0;
+  font-family:'Roboto',arial,sans-serif;
+  background-color: #f5f7f8; /*grey*/
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+a {
+	text-decoration:none;
+}
+
+.clear {
+	clear: both;
+}
+
+.orange {
+	color: #ff533d;
+}
+
+
+/**** Login Page ****/
+.loginbody {
+	background-color: #efefef;
+	font-family: 'Signika', sans-serif;
+}
+
+.loginhr {
+	margin: 2% 5%;
+}	
+
+.login {
+	background-color: #FFFFFF;
+	margin: 0 auto;
+}
+
+.tab {
+	float:left;
+	text-align: center;
+	width: 50%;
+	padding: 2%;
+}
+
+.tab:hover {
+	background-color: #0f1626;
+	color: white;
+}
+
+.fieldwrap {
+	padding:3%;
+	margin: 0 auto;
+	clear: both;
+	width: 80%;
+}
+
+.fieldwrap label {
+	width: 25%;
+	color: #0f1626;
+}
+
+.fieldwrap input {
+	width: 60%;
+}
+
+.login-signupbutton {
+	text-transform: uppercase;
+	font-size: 12px;
+	background-color: #0f1626;
+	width: 25%;
+	padding: 2%;
+	color: white;
+	margin-left: 25%;
+	align-content: center;
+	border: 1px solid transparent;
+}
+
+.h2login {
+	text-align: center;
+}
+		
+.loginpage {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.activetab {
+	color: white;
+	background-color: #0f1626;
+}
+
+.non-activetab {
+	color: #0f1626;
+	background-color: #eeeeee;
+}
+
+#signup {
+	display: none;
+}
+
+		/* For Mobiles */
+		[class*="cols-"] {
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 650px) {
+			/* For tablets: */
+			.cols-t-8 {width: 66.66%;}
+		}
+		@media only screen and (min-width: 768px) {
+			/* For desktop: */
+			.cols-5 {width: 41.66%;}
+		}
+
+/********** Responsive Web Design ***********/
+* {
+	box-sizing: border-box;
+}
+
+		/* For Mobiles */
+		[class*="col-"] {
+			float:left;
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 650px) {
+			/* For tablets: */
+			.col-t-1 {width: 8.33%;}
+			.col-t-2 {width: 16.66%;}
+			.col-t-3 {width: 25%;}
+			.col-t-4 {width: 33.33%;}
+			.col-t-5 {width: 41.66%;}
+			.col-t-6 {width: 50%;}
+			.col-t-7 {width: 58.33%;}
+			.col-t-8 {width: 66.66%;}
+			.col-t-9 {width: 75%;}
+			.col-t-10 {width: 83.33%;}
+			.col-t-11 {width: 91.66%;}
+			.col-t-12 {width: 100%;}
+		}
+		@media only screen and (min-width: 768px) {
+			/* For desktop: */
+			.col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%;}
+			.col-3 {width: 25%;}
+			.col-4 {width: 33.33%;}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}
+		}
+
+
+		/*clear both */
+		.row::after {
+			clear: both;
+			display: block;
+		}
+
+/*********** Nav Bar ***************/
+.topnav {
+  overflow: hidden;
+  background-color: #0f1626;
+}
+
+.topnav .links {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.activemenu {
+  background-color: #ff533d;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:nth-child(-n+2)), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+a.image{
+    padding: 0;
+    margin: 0 2px;
+}
+
+.loginbtn {
+ background-color: #ff533d;
+  font-family: inherit;
+  color: white;
+  float: right;
+  padding: 6px 12px;
+  margin-right: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+ 
+/********* Slide Show **************/
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/**********************Home Page **************************/
+.homeh2,.homeh5 {
+  margin:0;
+  padding:0;
+  color: #ff533d;
+}
+
+.homeh5 {
+  text-transform: uppercase;
+}
+
+.homehr {
+  border-width: 1px;
+  border-style: inset;
+}
+.homeh1,.homeh4 { 
+  
+  margin: 0;
+  padding: 0;
+}
+.homeh1,.homeh4 {
+  text-align: center;
+}
+
+.homeh3 {
+  margin: 0;
+  padding-top: 10px;
+}
+
+
+.homecard {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #ffffff;
+    /*margin: 6px;*/
+    margin: 10px;
+    padding: 3%;
+    
+}
+
+.homecontainer {
+    text-align: center;
+    margin: 2% 0;
+}
+
+/* On mouse-over, add a deeper shadow */
+.homecard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.homep {
+  font-family: calibri, cursive;
+  padding: 0;
+  margin: 0;
+}
+
+.homesection {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+.societycontainer {
+    padding:3%;
+    text-align: center;
+    margin: 2% 0;
+    background-color: #ccc9c987;
+}
+
+.homesubcon {
+  text-align: center;
+  margin:0 2%;
+}
+
+
+/********************* Khaapa **************************/
+.khaapahr {
+  border-width: 1px;
+  border-style: inset;
+}
+.khaapah3 { 
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.khaapacard {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 3%;
+    
+}
+
+.khaapacontainer {
+    padding:3%;
+    text-align: center;
+    margin: 2% 0;
+    background-color: #ccc9c987;
+}
+
+/* On mouse-over, add a deeper shadow */
+.kkhaapacard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+td:nth-child(2) {
+  color: #ff533d;
+}
+
+td {
+  padding: .25em 0;
+}
+
+.khaapatextarea {
+  width: 100%;
+  margin: 2% 0;
+}
+
+.submitbtn {
+  background-color: #ff533d;
+  font-family: inherit;
+  color: white;
+  padding: 6px 12px;
+  margin: 6px 4px;
+  border: 1px solid transparent;
+}
+
+.submitbtn:hover {
+  background-color:#f78576;
+}
+
+.khaapap {
+  font-family: calibri, cursive;
+}
+
+.khaapasection {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.khaapah4 {
+  margin-top: 3%;
+  margin-bottom:0;
+}
+
+.khaapareview {
+  text-align: left;
+  color: #ff533d;
+}
+
+.khaapah2,.khaapah5 {
+  margin:0;
+  padding:0;
+  color: #ff533d;
+}
+
+.khaapah5 {
+  text-transform: uppercase;
+}
+
+.khaapasubcon {
+  text-align: center;
+  margin:0 2%;
+}
+.khaapaphotos {
+  margin:0 auto;
+}
+
+.khaapaphotos .left {
+  width: 50%;
+  text-align: center;
+}
+
+.khaapaphotos .left img {
+  width:95%;
+}
+
+/********************* About Us ************************/
+.aboutuscard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: white;
+  margin: 8px;
+}
+
+.aboutuscontainer {
+  padding: 0 16px;
+}
+
+.aboutuscontainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.aboutush2,.aboutush3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aboutusp {
+  overflow: hidden;
+  font-family: Helvetica;
+  text-align: center;
+}
+.aboutustitle {
+  color: #ff533d ;
+}
+
+.aboutusavatar {
+    vertical-align: middle;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.aboutusaim {
+  margin: 3%;
+}
+
+.aboutuscontent h2 {
+  font-family: 'Yellowtail', cursive;
+  color: #ff533d;
+  margin: 2%;
+  font-size: 2em;
+}
+
+.aboutusspan {
+  color: #ff533d;
+  font-family: 'Yellowtail', cursive;
+  font-size: 25px;
+}
+
+..aboutusaim p {
+    margin: 4%;
+    font-family: calib, cursive;
+}
+
+
+
+
+
+
+
+
+/********************* Footer **************************/
+footer {
+  background-color: #0f1626;
+  padding: 0 5% 2% 5%;
+  color: #ffffff;
+  font-family: Helvetica;
+}
+
+footer div div{
+  font-size: 16px;
+  margin-right: 13px;
+  
+}
+
+.border {
+  border-right: 1px solid #949494;
+}
+
+footer div div p a, footer h2 {
+  color:#FFFFFF;
+}
+
+footer h2 {
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+footer div div p {
+  margin: 3%;
+}
